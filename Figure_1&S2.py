@@ -50,6 +50,10 @@ Ensemble = ["CCSM4", "CCSM4-Utrecht", "CESM1.2", "CESM2", "COSMOS",
                 "EC-Earth3-LR", "GISS-E2-1-G", "HadCM3", "HadGEM3", "IPSL-CM6A-LR",
                 "MIROC4M", "NorESM-L", "NorESM1-F"]
 
+#["CCSM4", "CCSM4-Utrecht", "CESM1.2", "CESM2", "COSMOS",
+#                "EC-Earth3-LR", "GISS-E2-1-G", "HadCM3", "HadGEM3", "IPSL-CM6A-LR",
+#                "MIROC4M", "NorESM-L", "NorESM1-F"]
+
 #%% 3. Data Processing and Statistics
 
 #%%% 3.1 OHC: File read in and define variables
@@ -298,8 +302,8 @@ y_stipple = np.interp(y, (0, lat-1), (np.min(Lat), np.max(Lat)))
 axs[2].scatter(x_stipple, y_stipple, color='k', s=2, alpha = 0.5, marker='o', transform=cartopy.crs.PlateCarree())
 # Save the figure
 #Fig1bcd.suptitle(f'Ensemble Mean OHC: {Depth_upp} - {Depth_low} m', fontsize = 30, x = 0.435, y = 0.9)
-#plt.savefig(f"....png", dpi=300, bbox_inches='tight')
-#plt.savefig(f"....pdf", dpi=600, bbox_inches='tight')
+#plt.savefig(....png, dpi=600, bbox_inches='tight')
+#plt.savefig(....pdf, dpi=600, bbox_inches='tight')
 plt.show()
 
 #%%%% 4.2.2 Figure S1
